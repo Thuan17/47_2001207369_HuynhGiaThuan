@@ -48,10 +48,11 @@ namespace _2001207369_HuynhGiaThuan
                     return false;
             return true;
         }
+
         private void btnKtra_Click(object sender, EventArgs e)
         {
-
             x = Convert.ToInt32(textBox1.Text);
+          
             label4.Text = textBox1.Text;
             if (x != null)
             {
@@ -61,15 +62,7 @@ namespace _2001207369_HuynhGiaThuan
                     lSoNhap.Text = textBox1.Text;
                     lSoNhap.Visible = true;
 
-                    for (int i = 1; i <= x; i++)
-                    {
-                        
-                        if (SNT(i))
-                            lKhoan.Text =Convert.ToString(i);
-                        lKhoan.Visible = true;
-                    }
-
-
+               
                 }
                 else
                 {
@@ -86,6 +79,18 @@ namespace _2001207369_HuynhGiaThuan
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnSTT_Click(object sender, EventArgs e)
+        {
+            x = Convert.ToInt32(textBox1.Text);
+            for(int i = 1 ; i<=x; i++)
+            {
+                if(SNT(x))
+                {
+                    lKhoan.Text=x.ToString();
+                }
+            }
         }
     }
 }

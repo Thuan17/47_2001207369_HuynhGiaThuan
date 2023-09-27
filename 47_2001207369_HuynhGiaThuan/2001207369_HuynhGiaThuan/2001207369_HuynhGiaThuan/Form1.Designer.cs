@@ -89,6 +89,7 @@
             this.btnSTT.TabIndex = 3;
             this.btnSTT.Text = "In STT";
             this.btnSTT.UseVisualStyleBackColor = true;
+            this.btnSTT.Click += new System.EventHandler(this.btnSTT_Click);
             // 
             // btn_ex
             // 

@@ -16,7 +16,7 @@ namespace _2001207369_HuynhGiaThuan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Cau2());
+            Application.Run(new Form1());
         }
     }
 }

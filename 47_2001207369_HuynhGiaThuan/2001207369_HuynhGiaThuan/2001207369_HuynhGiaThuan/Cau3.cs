@@ -16,11 +16,18 @@ namespace _2001207369_HuynhGiaThuan
         {
             InitializeComponent();
         }
-
+        
         private void btnFind_Click(object sender, EventArgs e)
         {
-            //String code = txtCode.Text
-            //    if(code != null)
+            String code = txtCode.Text;
+            if (code != null)
+            {
+
+            }
+            else {
+                MessageBox.Show("Khong de trong");
+            
+            }
         }
     }
 }
