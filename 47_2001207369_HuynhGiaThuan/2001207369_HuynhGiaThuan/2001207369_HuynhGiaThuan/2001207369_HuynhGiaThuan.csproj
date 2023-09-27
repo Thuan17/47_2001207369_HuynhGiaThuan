@@ -50,6 +50,12 @@
     <Compile Include="Cau2.Designer.cs">
       <DependentUpon>Cau2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cau3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cau3.Designer.cs">
+      <DependentUpon>Cau3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Cau2.resx">
       <DependentUpon>Cau2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cau3.resx">
+      <DependentUpon>Cau3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -85,6 +94,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReadMe.Designer.txt" />
+    <Content Include="ReadMe.txt">
+      <SubType>Form</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

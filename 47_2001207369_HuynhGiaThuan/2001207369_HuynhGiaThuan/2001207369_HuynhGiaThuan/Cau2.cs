@@ -21,22 +21,7 @@ namespace _2001207369_HuynhGiaThuan
         {
 
         }
-       
-        //public double denta(){
-        //    int a,b,c;
-        //    a = Convert.ToInt32(txta.Text);
-        //    b = Convert.ToInt32(txta.Text);
-        //    c = Convert.ToInt32(txta.Text);
-        //    return(b*b)-4*a*c;
-        //}
-        //public double nghiemkep()
-        //{
-        //    int a, b, c;
-        //    a = Convert.ToInt32(txta.Text);
-        //    b = Convert.ToInt32(txta.Text);
-        //    c = Convert.ToInt32(txta.Text);
-        //    return -(b/2*a);
-        //}
+      
 
         private void Kie_Click(object sender, EventArgs e)
         {
@@ -47,24 +32,30 @@ namespace _2001207369_HuynhGiaThuan
         {
              int a, b, c;
             a = Convert.ToInt32(txta.Text);
-            b = Convert.ToInt32(txta.Text);
-            c = Convert.ToInt32(txta.Text);
+            b = Convert.ToInt32(txtb.Text);
+            c = Convert.ToInt32(txtc.Text);
             double denta = b * b - 4 * a * c;
 
            
-            label9.Text = Convert.ToString(denta);
+          
             if(denta < 0)
             {
                 lbPTVONGHIEM.Visible = true;
             }
             else if (denta == 0)
             {
+                x2kep.Visible = true;
                 double nghiemkep = -(b / 2 * a);
                 x2kep.Text = Convert.ToString(nghiemkep);
 
             }
             else 
             {
+
+                double x1 = (-b + (double)Math.Sqrt(denta)) / (2 * a);
+                double x2 = (-b - (double)Math.Sqrt(denta)) / (2 * a);
+                X1PB.Text = Convert.ToString(x1);
+                X1PB.Text = Convert.ToString(x2);
                 X1PB.Visible = true;
             }
         }

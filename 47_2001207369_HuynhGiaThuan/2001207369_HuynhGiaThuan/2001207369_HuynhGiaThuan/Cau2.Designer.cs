@@ -48,7 +48,6 @@
             this.X2PB = new System.Windows.Forms.Label();
             this.X1PB = new System.Windows.Forms.Label();
             this.lbPTVONGHIEM = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Kie
@@ -165,7 +164,6 @@
             this.label5.Size = new System.Drawing.Size(45, 24);
             this.label5.TabIndex = 3;
             this.label5.Text = "X1=";
-            this.label5.Visible = false;
             // 
             // label6
             // 
@@ -249,16 +247,6 @@
             this.lbPTVONGHIEM.Text = "Phương trình vô Nghiệm";
             this.lbPTVONGHIEM.Visible = false;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(453, 333);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(45, 24);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "X2=";
-            // 
             // Cau2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,7 +261,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.x2kep);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.X1PB);
@@ -314,6 +301,5 @@
         private System.Windows.Forms.Label X2PB;
         private System.Windows.Forms.Label X1PB;
         private System.Windows.Forms.Label lbPTVONGHIEM;
-        private System.Windows.Forms.Label label9;
     }
 }
