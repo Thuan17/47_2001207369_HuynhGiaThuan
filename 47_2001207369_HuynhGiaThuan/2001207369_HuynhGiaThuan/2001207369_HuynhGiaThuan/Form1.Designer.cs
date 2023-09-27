@@ -39,6 +39,7 @@
             this.lKhoan = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lSoNhap = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Kie
@@ -125,6 +126,7 @@
             this.lKhoan.Size = new System.Drawing.Size(17, 13);
             this.lKhoan.TabIndex = 1;
             this.lKhoan.Text = "xx";
+            this.lKhoan.Visible = false;
             this.lKhoan.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
@@ -147,6 +149,15 @@
             this.lSoNhap.Visible = false;
             this.lSoNhap.Click += new System.EventHandler(this.label4_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(383, 257);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Nhập số :";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,6 +170,7 @@
             this.Controls.Add(this.lSoNhap);
             this.Controls.Add(this.lKhoan);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -183,6 +195,7 @@
         private System.Windows.Forms.Label lKhoan;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lSoNhap;
+        private System.Windows.Forms.Label label4;
     }
 }
 

@@ -52,6 +52,7 @@ namespace _2001207369_HuynhGiaThuan
         {
 
             x = Convert.ToInt32(textBox1.Text);
+            label4.Text = textBox1.Text;
             if (x != null)
             {
                 if (SNT(x))
@@ -59,6 +60,16 @@ namespace _2001207369_HuynhGiaThuan
                     label2.Text = " so nguyen to";
                     lSoNhap.Text = textBox1.Text;
                     lSoNhap.Visible = true;
+
+                    for (int i = 1; i <= x; i++)
+                    {
+                        
+                        if (SNT(i))
+                            lKhoan.Text =Convert.ToString(i);
+                        lKhoan.Visible = true;
+                    }
+
+
                 }
                 else
                 {
